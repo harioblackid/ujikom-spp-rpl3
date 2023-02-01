@@ -38,7 +38,7 @@ if(isset($_POST['submit'])) {
 
     $data = mysqli_query($koneksi, "SELECT * FROM petugas WHERE username='$username' and password='$password'");
     $cek = mysqli_num_rows($data);
-
+ 
     if($cek > 0){
         session_start();
         $query = mysqli_fetch_array($data);
