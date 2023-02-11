@@ -40,14 +40,9 @@
             <div class="col-md-8 my-5 ms-4">
                 <h1>Selamat datang! <?php echo $_SESSION['username'];?></h1>
                 <p class="fw-semibold">Pembayaran SPP</p>
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item active" aria-current="page"><a href="admin.php" class="text-decorration-none">Home</a></li>
-                    <li class="breadcrumb-item"><a href="daftar.php" class="text-decorration-none">Registrasi</a></li>
-                    <li class="breadcrumb-item"><a href="data_siswa.php" class="text-decorration-none">Data Siswa</a></li>
-                    <li class="breadcrumb-item"><a href="data_petugas.php" class="text-decorration-none">Petugas</a></li>
-                    <li class="breadcrumb-item"><a href="data_kelas.php" class="text-decorration-none">Kelas</a></li>
-                    <li class="breadcrumb-item"><a href="data_spp.php" class="text-decorration-none">SPP</a></li>
-                </ol>
+                
+                <?php include "navbar.php"; ?>
+
                 <div class="form mb-3">
                     <textarea class="form-control" rows="8"></textarea>
                     <button type="button" class="catatan btn btn-primary mt-4">Ini Pembayaran SPP</button>
